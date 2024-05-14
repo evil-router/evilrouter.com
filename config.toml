@@ -7,3 +7,6 @@ theme = 'm10c'
   author = "Bernard McCormack"
   # Description
   description = "Cloud Enthusiast and Linux Advocate"
+[services]
+  [services.googleAnalytics]
+    ID = "G-BRMY7L3EZM"

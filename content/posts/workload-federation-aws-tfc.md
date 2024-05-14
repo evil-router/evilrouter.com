@@ -36,7 +36,7 @@ A few things you'll need to have in place before you get started:
           organization = "$YOUR_ORG_NAME"
 
        workspaces {
-         name = "$YOUR_WORKSPACENAME"
+         name = "$YOUR_WORKSPACE_NAME"
           }
        }
       }
