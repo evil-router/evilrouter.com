@@ -1,0 +1,9 @@
+baseURL = 'http://evilrouter.com/'
+languageCode = 'en-us'
+title = 'Evil Router'
+theme = 'm10c'
+[params]
+  # Author
+  author = "Bernard McCormack"
+  # Description
+  description = "Cloud Enthusiast and Linux Advocate"
