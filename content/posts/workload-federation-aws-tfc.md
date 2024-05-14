@@ -1,9 +1,8 @@
 ---
 title: "Workload Federation with AWS and Terraform Cloud"
 date: 2024-05-13T15:48:49-04:00
-draft: false
+draft: true
 ---
-
 
 # Workload Federation with AWS and Terraform Cloud
 
@@ -25,7 +24,22 @@ A few things you'll need to have in place before you get started:
 4. Set the following sensitive environment variables (we will be deleting these later):
    - `AWS_ACCESS_KEY_ID`
    - `AWS_SECRET`
-5. Create a new terraform project
+5. Create a new workspace in Terraform Cloud
+6. Create a new folder locally and create a new Terraform configuration file, `main.tf`.
+   - Add the following code to the file replacing the Organization and Workspace names with your own:
+   - ```hcl
+        provider "aws" {
+        region = "us-west-2"
+     }
+     terraform {
+       cloud {
+          organization = "$YOUR_ORG_NAME"
 
-   - 
+       workspaces {
+         name = "$YOUR_WORKSPACENAME"
+          }
+       }
+      }
+     
+     ```
 
