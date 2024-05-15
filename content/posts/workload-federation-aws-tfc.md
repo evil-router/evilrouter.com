@@ -69,7 +69,7 @@ account, and the roles can be created as needed.
 
 
 ## References
-[Dynamic Provider Configuration](https://www.terraform.io/docs/language/providers/configuration.html#dynamic-provider-configuration) 
-[Dynamic Aws Provider Configuration](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration)
-[Token Specification](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens#token-specification)
+- [Dynamic Provider Configuration](https://www.terraform.io/docs/language/providers/configuration.html#dynamic-provider-configuration)
+- [Dynamic Aws Provider Configuration](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration)
+- [Token Specification](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens#token-specification)
 
