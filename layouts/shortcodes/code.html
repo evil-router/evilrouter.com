@@ -1,0 +1,25 @@
+{{/* }}
+
+{{*/}}
+{{- $file := .Get "file"}}
+{{- $format := .Get "format" | default "bash" }}
+{{- $repoFile := printf "code/%s/%s" .Page.Slug $file }}
+{{ $repoFile }}
+
+{{- $f := readFile $repoFile }}
+
+{{- if eq $f "" }}
+    <div class="alert alert-danger" role="alert">
+        Failed to read file: {{ $repoFile }}
+    </div>
+{{- end }}
+
+{{- $result := transform.Highlight $f $format }}
+{{- if eq $result "" }}
+    <div class="alert alert-danger" role="alert">
+        Failed to highlight file: {{ $repoFile }}
+    </div>
+{{- end }}
+
+{{- $result }}
+
