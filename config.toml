@@ -1,12 +1,37 @@
-baseURL = 'http://evilrouter.com/'
+baseURL = 'https://evilrouter.com/'
 languageCode = 'en-us'
-title = 'Evil Router'
+title = 'Bernard McCormack'
 theme = 'm10c'
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+#  [[menu.main]]
+#    identifier = "about"
+#    name = "About"
+#    url = "/about/"
+#    weight = 3
+
 [params]
-  # Author
-  author = "Bernard McCormack"
-  # Description
-  description = "Cloud Enthusiast and Linux Advocate"
-[services]
-  [services.googleAnalytics]
-    ID = "G-BRMY7L3EZM"
+   # Author
+   author = "Bernard McCormack"
+   # Description
+   description = "Cloud Enthusiast and Linux Advocate"
+   menu_item_separator = " - "
+   [[params.social]]
+     icon = "github"
+     name = "Github"
+     url = "https://github.com/vamage"
+   [[params.social]]
+     icon = "linkedin"
+     name = "LinkedIn"
+     url = "https://www.linkedin.com/in/bernard-mccormack-98900912/"
+
+

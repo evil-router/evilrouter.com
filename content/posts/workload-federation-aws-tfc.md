@@ -3,6 +3,11 @@ title: "Workload Federation with AWS and Terraform Cloud"
 date: 2024-05-15T15:48:49-04:00
 draft: false
 slug: "workload-federation-aws-tfc"
+tags: 
+   - "Terraform" 
+   - "AWS" 
+   - "Terraform-Cloud" 
+   - "Workload-Federation"
 ---
 
 # Workload Federation with AWS and Terraform Cloud
