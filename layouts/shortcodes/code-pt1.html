@@ -1,0 +1,4 @@
+{{- $file := .Get "file"}}
+{{- $format := .Get "format" | default "bash" }}
+{{  $project := .Get "project" | default .Page.Slug }}
+{{  printf "file - %s, format - %s, project - %s " $file $format $project }}
