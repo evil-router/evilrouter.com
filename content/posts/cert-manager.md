@@ -147,7 +147,7 @@ We can watch the issuing process with the following command:
 kubectl get certificate -n test-cert-issue test-certificate -o jsonpath='{.status.conditions[?(@.type=="Ready")].message}'
 ```
 Which should return after a few minutes:
-```
+```bash
 kubectl get certificate -n test-cert-issue test-certificate -o jsonpath='{.status.conditions[?(@.type=="Ready")].message}'
 
 Certificate is up to date and has not expired                         
@@ -161,7 +161,7 @@ kubectl get secret -n test-cert-issue test-tls -o jsonpath='{.data.tls\.crt}' | 
 ```
 
 Which should return something like this:
-```
+```text
 Certificate:
     Data:
         Version: 3 (0x2)
@@ -274,7 +274,7 @@ First we need to get one of the IP addresses of the Ingress Controller
 kubectl get ingress -n test-cert-issue nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 ```
 Which should return something like this:
-```
+```text
 123.45.67.89
 ```
 
@@ -285,7 +285,7 @@ Now you can test the certificate with the following command:
 curl  https://test.YOUR_DOMAIN_NAME --resolve 123.45.67.89:443:test.YOUR_DOMAIN_NAME
 ```
 and you should see the following output with no errors:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
